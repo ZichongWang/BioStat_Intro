@@ -33,3 +33,13 @@ jupyter lab dl_intro/03_logistic_regression_mnist_pytorch.ipynb
 ```
 
 This notebook trains a one-layer PyTorch logistic regression classifier on MNIST with `nn.Linear(784, 10)`, explains learning rate and the basic training loop, and reports test accuracy.
+
+## Two-Layer MLP on MNIST
+
+Open and run:
+
+```bash
+jupyter lab dl_intro/04_mlp_mnist_pytorch.ipynb
+```
+
+This notebook introduces ReLU, sigmoid, and the idea of an MLP, then trains a two-linear-layer PyTorch MLP on MNIST and reports test accuracy.
