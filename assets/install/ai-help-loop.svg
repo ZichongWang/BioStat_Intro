@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">How to use AI assistance safely</title>
+  <desc id="desc">A safe AI assistance loop: provide context, ask for diagnosis, run verification commands, apply one fix, record the result.</desc>
+  <rect width="1100" height="430" fill="#fbfcfe"/>
+  <text x="550" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#172033">安全使用 AI 辅助排错</text>
+  <text x="550" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#52616f">不要只问“怎么办”，要把系统、命令、报错和目标说清楚，并要求 AI 先解释再给安全检查命令。</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#62748a"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial, sans-serif" font-size="16">
+    <rect x="80" y="130" width="190" height="110" rx="14" fill="#eef4ff" stroke="#2b7de9" stroke-width="2"/>
+    <text x="175" y="166" text-anchor="middle" font-size="20" font-weight="700" fill="#172033">给上下文</text>
+    <text x="175" y="198" text-anchor="middle" fill="#52616f">系统、芯片、终端</text>
+    <text x="175" y="222" text-anchor="middle" fill="#52616f">完整命令和报错</text>
+
+    <rect x="330" y="130" width="190" height="110" rx="14" fill="#f0fdf4" stroke="#26a269" stroke-width="2"/>
+    <text x="425" y="166" text-anchor="middle" font-size="20" font-weight="700" fill="#172033">先诊断</text>
+    <text x="425" y="198" text-anchor="middle" fill="#52616f">可能原因排序</text>
+    <text x="425" y="222" text-anchor="middle" fill="#52616f">不要马上重装</text>
+
+    <rect x="580" y="130" width="190" height="110" rx="14" fill="#fff7ed" stroke="#d9822b" stroke-width="2"/>
+    <text x="675" y="166" text-anchor="middle" font-size="20" font-weight="700" fill="#172033">验证命令</text>
+    <text x="675" y="198" text-anchor="middle" fill="#52616f">where/which/python</text>
+    <text x="675" y="222" text-anchor="middle" fill="#52616f">每次只改一件事</text>
+
+    <rect x="830" y="130" width="190" height="110" rx="14" fill="#f6f2ff" stroke="#7b61ff" stroke-width="2"/>
+    <text x="925" y="166" text-anchor="middle" font-size="20" font-weight="700" fill="#172033">记录结果</text>
+    <text x="925" y="198" text-anchor="middle" fill="#52616f">复制新输出</text>
+    <text x="925" y="222" text-anchor="middle" fill="#52616f">继续缩小问题</text>
+
+    <line x1="285" y1="185" x2="315" y2="185" stroke="#62748a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="535" y1="185" x2="565" y2="185" stroke="#62748a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="785" y1="185" x2="815" y2="185" stroke="#62748a" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="155" y="295" width="790" height="60" rx="12" fill="#fff4f0" stroke="#efaaa3"/>
+    <text x="550" y="321" text-anchor="middle" font-size="17" font-weight="700" fill="#9c1c13">警惕：AI 可能给出过时链接、错误版本或危险命令。</text>
+    <text x="550" y="346" text-anchor="middle" fill="#52616f">运行修改 PATH、删除环境、清空文件夹等命令前，先确认含义。</text>
+  </g>
+</svg>

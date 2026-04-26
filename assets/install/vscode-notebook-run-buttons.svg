@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="640" viewBox="0 0 1300 640" role="img" aria-labelledby="title desc">
+  <title id="title">VS Code notebook cell left and bottom controls</title>
+  <desc id="desc">Annotated VS Code notebook cell focusing on the left run button, run menu, execution count, output area, and bottom language label.</desc>
+  <rect width="1300" height="640" fill="#f7f9fc"/>
+  <text x="650" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172033">VS Code Notebook 中一个 cell 的左侧和下方</text>
+  <text x="650" y="74" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#52616f">先认识左侧运行按钮和下方输出位置；右上角工具栏不同版本会变化，本图不展开。</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L9,5 L1,9 Z" fill="#d9822b"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#101828" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="88" y="112" width="1124" height="360" rx="14" fill="#1f232b" stroke="#3c4452" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="116" y="142" width="1072" height="250" rx="8" fill="#1d2027" stroke="#3c4452" stroke-width="1.5"/>
+
+    <path d="M54 166 L70 175 L54 184 Z" fill="none" stroke="#c4cbd4" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M77 170 L83 176 L89 170" fill="none" stroke="#c4cbd4" stroke-width="2" stroke-linecap="round"/>
+    <text x="58" y="373" font-size="17" fill="#9aa3ad">[2]</text>
+
+    <g font-family="Consolas, 'Courier New', monospace" font-size="24">
+      <text x="150" y="190" fill="#ff6b78">transform</text>
+      <text x="292" y="190" fill="#7bdff2">=</text>
+      <text x="322" y="190" fill="#e8c16a">transforms.ToTensor()</text>
+
+      <rect x="142" y="220" width="825" height="36" fill="#2b303a"/>
+      <text x="150" y="246" fill="#ff6b78">train_dataset</text>
+      <text x="328" y="246" fill="#7bdff2">=</text>
+      <text x="358" y="246" fill="#e8c16a">datasets.MNIST(</text>
+      <text x="554" y="246" fill="#ff8190">root</text>
+      <text x="610" y="246" fill="#7bdff2">=</text>
+      <text x="636" y="246" fill="#e8c16a">DATA_DIR,</text>
+      <text x="754" y="246" fill="#ff8190">train</text>
+      <text x="814" y="246" fill="#7bdff2">=</text>
+      <text x="840" y="246" fill="#e8c16a">True,</text>
+      <text x="912" y="246" fill="#ff8190">download</text>
+
+      <text x="150" y="286" fill="#ff6b78">test_dataset</text>
+      <text x="314" y="286" fill="#7bdff2">=</text>
+      <text x="344" y="286" fill="#e8c16a">datasets.MNIST(root=DATA_DIR, train=False, download=True, transform=transform)</text>
+
+      <text x="150" y="344" fill="#69b7ff">print</text>
+      <text x="220" y="344" fill="#d3d8df">(</text>
+      <text x="238" y="344" fill="#8bd17c">f"number of training images = {len(train_dataset)}"</text>
+      <text x="828" y="344" fill="#d3d8df">)</text>
+      <text x="150" y="379" fill="#69b7ff">print</text>
+      <text x="220" y="379" fill="#d3d8df">(</text>
+      <text x="238" y="379" fill="#8bd17c">f"number of test images = {len(test_dataset)}"</text>
+      <text x="782" y="379" fill="#d3d8df">)</text>
+    </g>
+    <text x="1110" y="374" font-size="18" fill="#c4cbd4">Python</text>
+
+    <rect x="116" y="410" width="1072" height="44" rx="8" fill="#161a20" stroke="#3c4452" stroke-width="1.5"/>
+    <text x="150" y="438" font-size="17" fill="#d3d8df">number of training images = 60000</text>
+    <text x="498" y="438" font-size="17" fill="#d3d8df">number of test images = 10000</text>
+
+    <g fill="#ffffff" stroke="#d8e0ea" stroke-width="1.4">
+      <rect x="24" y="204" width="154" height="56" rx="8"/>
+      <rect x="24" y="276" width="154" height="56" rx="8"/>
+      <rect x="26" y="404" width="190" height="58" rx="8"/>
+      <rect x="370" y="500" width="260" height="58" rx="8"/>
+      <rect x="914" y="500" width="240" height="58" rx="8"/>
+    </g>
+
+    <g font-size="15" fill="#172033">
+      <text x="40" y="227" font-weight="700">运行当前 cell</text>
+      <text x="40" y="248" fill="#52616f">点击左侧三角形</text>
+
+      <text x="40" y="299" font-weight="700">运行菜单</text>
+      <text x="40" y="320" fill="#52616f">点击小箭头展开</text>
+
+      <text x="42" y="427" font-weight="700">执行编号</text>
+      <text x="42" y="448" fill="#52616f">[2] 表示第 2 次运行</text>
+
+      <text x="386" y="523" font-weight="700">输出区域</text>
+      <text x="386" y="544" fill="#52616f">print 的结果显示在 cell 下方</text>
+
+      <text x="930" y="523" font-weight="700">Cell 语言提示</text>
+      <text x="930" y="544" fill="#52616f">这里的 Python 不是环境名</text>
+    </g>
+
+    <g stroke="#d9822b" stroke-width="2.3" fill="none" marker-end="url(#arrow)" stroke-linecap="round">
+      <path d="M132 204 L72 177"/>
+      <path d="M132 276 L86 180"/>
+      <path d="M135 404 L72 374"/>
+      <path d="M470 500 L470 456"/>
+      <path d="M1036 500 L1112 380"/>
+    </g>
+  </g>
+</svg>

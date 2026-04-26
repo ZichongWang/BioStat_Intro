@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Package download mirror source explanation</title>
+  <desc id="desc">A diagram showing pip and conda downloading packages from official servers or a Tsinghua University mirror.</desc>
+  <rect width="1100" height="430" fill="#fbfcfe"/>
+  <text x="550" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#172033">为什么要配置清华源</text>
+  <text x="550" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#52616f">源就是软件下载地址。网络较慢时，可以让 pip 和 conda 优先从国内镜像站下载包。</text>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2b7de9"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#26a269"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="150" width="230" height="130" rx="16" fill="#ffffff" stroke="#b9c6d6" stroke-width="2"/>
+    <text x="185" y="190" text-anchor="middle" font-size="23" font-weight="700" fill="#172033">你的电脑</text>
+    <text x="185" y="224" text-anchor="middle" font-size="16" fill="#52616f">conda install</text>
+    <text x="185" y="250" text-anchor="middle" font-size="16" fill="#52616f">python -m pip install</text>
+
+    <rect x="445" y="108" width="240" height="100" rx="16" fill="#eef4ff" stroke="#2b7de9" stroke-width="3"/>
+    <text x="565" y="147" text-anchor="middle" font-size="21" font-weight="700" fill="#172033">官方源</text>
+    <text x="565" y="178" text-anchor="middle" font-size="16" fill="#52616f">默认下载地址</text>
+
+    <rect x="445" y="250" width="240" height="100" rx="16" fill="#ecfdf3" stroke="#26a269" stroke-width="3"/>
+    <text x="565" y="289" text-anchor="middle" font-size="21" font-weight="700" fill="#172033">清华 TUNA 镜像源</text>
+    <text x="565" y="320" text-anchor="middle" font-size="16" fill="#52616f">国内镜像下载地址</text>
+
+    <rect x="810" y="150" width="220" height="130" rx="16" fill="#fff7ed" stroke="#d9822b" stroke-width="2"/>
+    <text x="920" y="190" text-anchor="middle" font-size="22" font-weight="700" fill="#172033">Python 包</text>
+    <text x="920" y="224" text-anchor="middle" font-size="16" fill="#52616f">numpy, pandas</text>
+    <text x="920" y="250" text-anchor="middle" font-size="16" fill="#52616f">torch, torchvision</text>
+
+    <path d="M305 190 C355 155, 390 150, 430 155" fill="none" stroke="#2b7de9" stroke-width="4" marker-end="url(#arrow-blue)"/>
+    <path d="M685 158 C735 155, 770 170, 795 190" fill="none" stroke="#2b7de9" stroke-width="4" marker-end="url(#arrow-blue)"/>
+
+    <path d="M305 240 C355 295, 390 302, 430 302" fill="none" stroke="#26a269" stroke-width="4" marker-end="url(#arrow-green)"/>
+    <path d="M685 300 C735 298, 770 268, 795 240" fill="none" stroke="#26a269" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+    <text x="550" y="390" text-anchor="middle" font-size="16" fill="#52616f">镜像源不改变包本身的用法，只改变下载位置。配置错误时可以恢复默认源。</text>
+  </g>
+</svg>
