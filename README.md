@@ -11,3 +11,29 @@
 
 ## 安装
 请参照[Installation Guide](install.md)完成安装。
+
+## 推荐资源
+
+### 3B1B 深度学习入门
+
+建议优先观看前三个视频，它们对应本课程深度学习入门部分的核心概念：
+
+| 主题 | 资源 |
+| --- | --- |
+| 神经网络结构 | [【官方双语】深度学习之神经网络的结构 Part 1 ver 2.0](https://www.bilibili.com/video/BV1bx411M7Zx/?share_source=copy_web&vd_source=abe71d796049463f4080c0b5fbc898dc) |
+| 梯度下降 | [【官方双语】深度学习之梯度下降法 Part 2 ver 0.9 beta](https://www.bilibili.com/video/BV1Ux411j7ri/?share_source=copy_web&vd_source=abe71d796049463f4080c0b5fbc898dc) |
+| 反向传播 | [【官方双语】深度学习之反向传播算法 上/下 Part 3 ver 0.9 beta](https://www.bilibili.com/video/BV16x411V7Qg/?share_source=copy_web&vd_source=abe71d796049463f4080c0b5fbc898dc) |
+
+学有余力的同学可以继续了解 Transformer 和注意力机制：
+
+| 主题 | 资源 |
+| --- | --- |
+| Transformer 直观解释 | [【官方双语】GPT是什么？直观解释Transformer \| 深度学习第5章](https://www.bilibili.com/video/BV13z421U7cs/?share_source=copy_web&vd_source=abe71d796049463f4080c0b5fbc898dc) |
+| 注意力机制 | [【官方双语】直观解释注意力机制，Transformer的核心 \| 深度学习第6章](https://www.bilibili.com/video/BV1TZ421j7Ke/?share_source=copy_web&vd_source=abe71d796049463f4080c0b5fbc898dc) |
+
+### 自动求导与反向传播
+
+如果想进一步理解 PyTorch 如何记录计算图、计算梯度，可以参考：
+
+- [PyTorch Autograd Tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)
+- [Dive into Deep Learning: Automatic Differentiation](https://d2l.ai/chapter_preliminaries/autograd.html)
