@@ -9,6 +9,9 @@
 
 课程遇到问题鼓励求助AI（也可以找助教），但要注意核实AI内容的准确性。若使用搜索引擎，推荐使用Google和Bing，不推荐使用百度。
 
+若想尝试Coding Agent，推荐使用Claude Code + DeepSeek V4， 价格非常便宜。Claude Code安装可以参见[这里](https://mp.weixin.qq.com/s/AA2NHww4jUBuAfi10EYICw)，然后调用[DeepSeek API](https://api-docs.deepseek.com/zh-cn/)。当然如果有ChatGPT Plus及以上的订阅，也可以直接使用[Codex](https://openai.com/codex/)，无需额外付费。其[官方文档](https://developers.openai.com/codex/learn/best-practices)非常值得一读。
+
+
 ## 安装
 请参照[Installation Guide](install.md)完成安装。
 

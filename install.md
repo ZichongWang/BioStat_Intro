@@ -2,7 +2,11 @@
 
 本文面向第一次配置 Python 学习环境的同学，覆盖 Windows 和 macOS。目标是：用 **Miniconda** 创建一个独立的课程环境，再用 **VS Code** 打开并运行 `.ipynb` notebook。
 
-本文档依据官方文档整理，最后核对日期：2026-04-26。软件页面会更新，若页面按钮文字略有变化，以官网当前说明为准。
+我们知道教程并不完美，不可能让每一位同学都完全理解。建议大家学习过程中多多使用AI询问，直到理解整个过程。虽然环境配置甚至可以交给一些Agent（如Claude Code，Codex）完全自主完成，但我们仍然建议大家自己过一遍流程，对日后的学习科研会非常有帮助～
+
+大家可以探索一些高效使用AI的方法，比较详细告知任务（今天是安装软件和配置环境）、足够的上下文（比如电脑的系统、当前你对代码和命令行的了解程度）等等～
+
+本教程的目标是可以打开`/dl_intro`中notebook，并且可以正常运行。若你已经可以运行，则就不用看啦！
 
 ![安装路线图](assets/install/setup-overview.svg)
 
@@ -71,13 +75,6 @@ code --version
 4. 把 `Visual Studio Code.app` 拖到 `Applications` 文件夹。
 5. 从 `Applications` 打开 VS Code。
 
-### 1.3 Linux 安装 VS Code
-
-你都用Linux了想必可以关掉这个教程了。
-
-<p align="center">
-  <img src="assets/install/linux.png" alt="alt text">
-</p>
 
 ## 2. 下载并安装 Miniconda
 
@@ -89,6 +86,8 @@ code --version
 - 官方安装包列表：<https://repo.anaconda.com/miniconda/>
 
 Miniconda 比 Anaconda 更轻量。Anaconda 会预装很多包，体积更大；Miniconda 只提供 Python、conda 和基础工具，我们再按课程需要安装包。
+
+⚠️本节开始会有一些命令行使用场景，如果对命令行不熟悉请咨询AI。另外，请务必借助AI了解环境变量的概念。
 
 ### 2.1 选择正确的 Miniconda 安装包
 
@@ -178,8 +177,10 @@ conda info --envs
 2. Apple Silicon Mac 下载 `Miniconda3-latest-MacOSX-arm64.pkg`。
 3. Intel Mac 下载 `Miniconda3-latest-MacOSX-x86_64.pkg`。
 4. 双击 `.pkg` 文件。
-5. 按安装器提示安装。官方 macOS 图形安装器通常会安装到 `/opt/miniconda3`。
+5. 按安装器提示安装。
 6. 安装完成后，打开 Terminal。本文 macOS 部分默认 Terminal 使用系统默认的 zsh。
+
+若熟悉命令行操作，也可以直接使用命令行下载，参见<https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install>
 
 验证：
 
@@ -188,6 +189,14 @@ conda --version
 python --version
 conda info --envs
 ```
+
+### 2.4 Linux 安装 Miniconda
+
+你都用Linux了想必就不会进入这个教程了。
+
+<p align="center">
+  <img src="assets/install/linux.png" alt="alt text">
+</p>
 
 ## 3. 命令行基本用法
 
@@ -579,13 +588,9 @@ python -m pip install numpy pandas matplotlib seaborn scikit-learn torch torchvi
 让 VS Code notebook 能看到这个环境：
 
 ```bash
-python -m ipykernel install --user --name biostat --display-name "Python (biostat)"
+python install ipykernel
 ```
 
-含义：
-
-- `--name biostat` 是内部名称。
-- `--display-name "Python (biostat)"` 是 VS Code notebook 里看到的名字。
 
 ### 6.4 验证环境是否正确
 
@@ -616,13 +621,6 @@ jupyter kernelspec list
 
 安装 Python 插件后，VS Code 可能自动安装 Pylance、Python Debugger 等相关插件，这是正常的。
 
-可选插件：
-
-| 插件 | 什么时候需要 |
-| --- | --- |
-| Chinese (Simplified) Language Pack | 想把 VS Code 界面改成中文时 |
-| GitHub Copilot | 想在 VS Code 中使用 AI 辅助时；不是课程必需 |
-| Markdown All in One | 经常写 Markdown 文档时；不是课程必需 |
 
 
 
