@@ -377,9 +377,9 @@ DeepSeek_V4.pdf               100%[=============================================
 | 配置对象 | 影响哪些命令 | 常见用途 |
 | --- | --- | --- |
 | conda 源 | `conda install`、`conda create` | 下载 Python、numpy 等 conda 包 |
-| pip 源 | `python -m pip install` | 下载 PyPI 上的 Python 包 |
+| pip 源 | `pip install` | 下载 PyPI 上的 Python 包 |
 
-本课程用 `python -m pip install -r requirement.txt` 安装依赖，因此 **pip 清华源最直接有用**。如果你希望 `conda create` 或 `conda install` 也更快，再配置 conda 清华源。
+本课程用 `pip install -r requirement.txt` 安装依赖，因此 **pip 清华源最直接有用**。如果你希望 `conda create` 或 `conda install` 也更快，再配置 conda 清华源。
 
 ### 5.1 配置 pip 清华源
 
@@ -393,32 +393,32 @@ conda activate biostat
 临时使用清华源安装某个包：
 
 ```bash
-python -m pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple numpy
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple numpy
 ```
 
 设为默认源：
 
 ```bash
-python -m pip install --upgrade pip
-python -m pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+pip install --upgrade pip
+pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 ```
 
 如果升级 pip 本身也很慢，可以临时用清华源升级：
 
 ```bash
-python -m pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple --upgrade pip
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple --upgrade pip
 ```
 
 查看当前 pip 配置：
 
 ```bash
-python -m pip config list
+pip config list
 ```
 
 恢复默认 PyPI 源：
 
 ```bash
-python -m pip config unset global.index-url
+pip config unset global.index-url
 ```
 
 注意：TUNA 官方帮助中提醒，PyPI 的 URL 需要使用 `https`，并且末尾的 `simple` 不能少。
@@ -530,7 +530,14 @@ conda info
 
 ## 6. 创建课程环境
 
-下面的命令从仓库根目录运行，也就是包含 `README.md` 和 `requirement.txt` 的文件夹。
+下面的命令从仓库根目录运行，也就是包含 `README.md` 和 `requirement.txt` 的文件夹。（可以使用ls和pwd命令检查）
+可以直接克隆本仓库（需要先安装[git](https://git-scm.com/install/)，问问AI怎么装），或者直接下载zip。
+
+<p align="center">
+  <img src="assets/install/github.png" alt="GitHub 下载入口" width="520">
+</p>
+
+第一次安装可以先下载zip，但建议学会git的基本使用方法。之后本仓库还会更新，使用git可以方便地获得最新版代码。
 
 Windows 示例：
 
@@ -572,15 +579,13 @@ conda info --envs
 确保你已经在仓库根目录，也就是有 `requirement.txt` 的目录。然后运行：
 
 ```bash
-python -m pip install -r requirement.txt
+pip install -r requirement.txt
 ```
-
-这里使用 `python -m pip`，而不是直接写 `pip`，是为了尽量保证 pip 属于当前激活的 Python 环境。
 
 如果你只是练习安装，还没有下载本仓库，也可以手动安装课程核心包：
 
 ```bash
-python -m pip install numpy pandas matplotlib seaborn scikit-learn torch torchvision ipykernel
+pip install numpy pandas matplotlib seaborn scikit-learn torch torchvision ipykernel
 ```
 
 ### 6.3 注册 Jupyter kernel
@@ -588,7 +593,7 @@ python -m pip install numpy pandas matplotlib seaborn scikit-learn torch torchvi
 让 VS Code notebook 能看到这个环境：
 
 ```bash
-python install ipykernel
+pip install ipykernel
 ```
 
 
@@ -684,11 +689,9 @@ jupyter kernelspec list
 建议第一次运行：
 
 1. 先打开 `dl_intro/02_softmax_cross_entropy.ipynb`，它不依赖 MNIST 下载，适合测试环境。
-2. 再打开 `dl_intro/03_logistic_regression_mnist_pytorch.ipynb`。
-3. 用鼠标点击第一个代码 cell 左侧的三角形按钮，确认它可以运行。
-4. 继续逐个点击后续 cell 的运行按钮。每运行一个 cell，就看一下下方是否出现输出或报错。
-5. 第一次使用 MNIST 时，`torchvision` 会下载数据到 `data/`。这需要网络，等待几分钟是正常的。
-6. 确认前几个 cell 都正常后，再继续逐个运行后面的 cell。熟悉以后再使用 VS Code 的“运行全部”功能。
+2. 用鼠标点击第一个代码 cell 左侧的三角形按钮，确认它可以运行。
+3. 继续逐个点击后续 cell 的运行按钮。每运行一个 cell，就看一下下方是否出现输出或报错。
+4. 确认前几个 cell 都正常后，再继续逐个运行后面的 cell。熟悉以后再使用 VS Code 的“运行全部”功能。
 
 测试 cell：
 
@@ -702,6 +705,8 @@ print(torch.cuda.is_available())
 ```
 
 本课程默认 CPU 即可运行。`torch.cuda.is_available()` 输出 `False` 不代表失败，只表示当前没有使用 NVIDIA GPU。
+
+之后可以尝试运行`dl_intro/01_mnist_dataset_overview.ipynb`。运行该notebook会下载MNIST数据集，下载完成后即可运行全部其他notebook。
 
 ## 10. 常见问题和解决方法
 
