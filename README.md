@@ -15,6 +15,8 @@
 ## 安装
 请参照[Installation Guide](install.md)完成安装。
 
+安装后，可以参照[Git tutorial](git_tutorial.md)学习git的基本用法。
+
 ## 推荐资源
 
 ### 3B1B 深度学习入门

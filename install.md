@@ -537,7 +537,8 @@ conda info
   <img src="assets/install/github.png" alt="GitHub 下载入口" width="520">
 </p>
 
-第一次安装可以先下载zip，但建议学会git的基本使用方法。之后本仓库还会更新，使用git可以方便地获得最新版代码。
+第一次安装可以先下载zip，但建议之后学会git的基本使用方法。之后本仓库还会更新，使用git可以方便地获得最新版代码。
+大家可以在完成vscode+conda的配置后，参照[Git tutorial](git_tutorial.md)学习git的基本用法。
 
 Windows 示例：
 
