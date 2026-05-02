@@ -5,11 +5,11 @@
 ## AI使用指引
 本课程鼓励大家使用AI工具辅助学习，特别鼓励使用Agent工具，比如Claude Code，Codex， Kimi Code等等，并在使用中了解其功能和局限性，以及如何融入自己日常的工作流中。
 
+若想尝试Coding Agent，推荐使用Claude Code + DeepSeek V4， 价格非常便宜。Claude Code安装可以参见[这里](https://mp.weixin.qq.com/s/AA2NHww4jUBuAfi10EYICw)，然后调用[DeepSeek API](https://api-docs.deepseek.com/zh-cn/)。当然如果有ChatGPT Plus及以上的订阅，也可以直接使用[Codex](https://openai.com/codex/)，无需额外付费。其[官方文档](https://developers.openai.com/codex/learn/best-practices)非常值得一读。
+
 然而，过度依赖AI会削弱个人的能力。本课程中，尽可能使用AI来帮助你理解问题和代码，而非将所有写代码、写报告的任务交给AI。AI仅仅是你的助手，你应当完全理解它所做的事情、所写的代码。
 
-课程遇到问题鼓励求助AI（也可以找助教），但要注意核实AI内容的准确性。若使用搜索引擎，推荐使用Google和Bing，不推荐使用百度。
-
-若想尝试Coding Agent，推荐使用Claude Code + DeepSeek V4， 价格非常便宜。Claude Code安装可以参见[这里](https://mp.weixin.qq.com/s/AA2NHww4jUBuAfi10EYICw)，然后调用[DeepSeek API](https://api-docs.deepseek.com/zh-cn/)。当然如果有ChatGPT Plus及以上的订阅，也可以直接使用[Codex](https://openai.com/codex/)，无需额外付费。其[官方文档](https://developers.openai.com/codex/learn/best-practices)非常值得一读。
+课程遇到问题鼓励求助AI（也可以找助教），但要注意核实AI内容的准确性。若使用搜索引擎，推荐使用Google和Bing，不推荐使用百度。在notebook和教程中内置了一些AI使用指引。初衷是无论教程写的多么详细，由于每个人的知识储备不同，总会有你不理解的地方。因此我们尝试将一些解释的工作交给你的大模型，告诉你需要理解到什么程度、回答什么问题。如果你对此有任何的意见和建议，欢迎反馈给老师和助教。
 
 
 ## 安装

@@ -53,3 +53,13 @@ dl_intro/05_overfit_regularization_mnist.ipynb
 ```
 
 This notebook introduces train/validation/test splits, over-parameterization, overfitting risk, dropout, weight decay, validation checks every few training steps, and comparison of train/validation curves plus final test results.
+
+## PyTorch Building Blocks and Python Classes
+
+Open in VS Code:
+
+```text
+dl_intro/06_pytorch_building_blocks.ipynb
+```
+
+This notebook explains the basic code structure behind PyTorch training: Python classes, `nn.Module`, `__init__`, `forward`, `Dataset`, `DataLoader`, loss functions, optimizers, `model.train()`, `model.eval()`, and the standard `zero_grad -> forward -> loss -> backward -> step` training pattern.
